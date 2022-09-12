@@ -7,14 +7,14 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="text-xl bg-slate-900 flex justify-center items-center h-screen">
+<body class="relative text-xl bg-slate-900 flex justify-center items-center h-screen">
     <section>
 
         <button class="show-modals mx-4 bg-gradient-to-r from-emerald-200 to-slate-400  rounded-full px-5 py-2 transition hover:-translate-y-1 hover:shadow-xl">Show modal 1</button>
         <button class="show-modals mx-4 bg-gradient-to-r from-emerald-200 to-slate-400  rounded-full px-5 py-2 transition hover:-translate-y-1 hover:shadow-xl">Show modal 2</button>
         <button class="show-modals mx-4 bg-gradient-to-r from-emerald-200 to-slate-400  rounded-full px-5 py-2 transition hover:-translate-y-1 hover:shadow-xl">Show modal 3</button>
         
-        <div class="modal px-16 pb-20 mt-14 bg-white rounded-xl hidden">
+        <div class="modal relative z-20 px-16 pb-20 mt-14 bg-white rounded-xl hidden">
             <div class="flex justify-end items-center h-36 w-full">
                 <button class="close-modal">
                     <svg width="24" class="transition ease-in hover:-translate-y-1 rounded-full" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +30,7 @@
                 tempor. 
             </p>
         </div>
-        <div class="overlay hidden"></div>
+        <div class="overlay bg-black hidden h-screen w-screen opacity-50 backdrop-blur-sm absolute top-0 right-0 bottom-0"></div>
         <script src="script.js"></script>
     </section>
 </body>
