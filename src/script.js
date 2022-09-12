@@ -13,15 +13,13 @@ for (let i = 0; i < showModals.length; i++)
     } 
 )
 
-closeModal.addEventListener('click', function () {
+const closeModalBtn = () => {
     modal.classList.add('hidden')
     overlay.classList.add('hidden')
+}
 
-})
+closeModal.addEventListener('click', closeModalBtn)
 
-overlay.addEventListener('click', () => {
-    modal.classList.add('hidden')
-    overlay.classList.add('hidden')
-    overlay.style.cursor = 'pointer'
-})
+
+overlay.addEventListener('click', closeModalBtn)
 
